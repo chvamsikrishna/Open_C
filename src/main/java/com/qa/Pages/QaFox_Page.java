@@ -7,7 +7,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
+
+// should have private by locators
+
 public class QaFox_Page {
+
 	
 	private WebDriver driver;
 	private By dropdownEle = By.cssSelector("#drop1");
