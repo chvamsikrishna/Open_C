@@ -20,7 +20,7 @@ pipeline
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                     git 'https://github.com/chvamsikrishna/Open_C.git'
-                    bat "mvn clean test -Dsurefire.suiteXmlFiles=C:\Users\Niranjan\Documents\Java_Eclipse_Practice\Demo_De\testNG.xml"
+                    bat "mvn clean test -Dsurefire.suiteXmlFiles=C:/Users/Niranjan/Documents/Java_Eclipse_Practice/Demo_De/testNG.xml"
                     
                 }
             }
@@ -64,7 +64,7 @@ pipeline
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                     git 'https://github.com/chvamsikrishna/Open_C.git'
-                    bat "mvn clean test -Dsurefire.suiteXmlFiles=C:\Users\Niranjan\Documents\Java_Eclipse_Practice\Demo_De\testNG.xml"    
+                    bat "mvn clean test -Dsurefire.suiteXmlFiles=C:/Users/Niranjan/Documents/Java_Eclipse_Practice/Demo_De/testNG.xml"    
                 }
             }
         }
