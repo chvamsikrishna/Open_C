@@ -1,15 +1,28 @@
-pipeline 
-{
+ipeline{
+    
+    
     agent any
     
-    tools{
-    	maven 'Maven'
+    stages{
+        
+        stage("build"){
+            steps{
+                echo("build project")
+            }
         }
-
-    stages 
-    {
-       
-          
+        
+        stage("deploy to dev"){
+            steps{
+                echo("deploy to dev")
+            }
+        }
+        
+        stage("RUN UTs"){
+            steps{
+                echo("run unit tests")
+            }
+        }
+           
         stage("Deploy to QA"){
             steps{
                 echo("deploy to qa")
