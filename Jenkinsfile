@@ -25,7 +25,7 @@ pipeline{
            
         stage("Deploy to QA"){
             steps{
-                echo("deploy to qa")
+                echo("deploy to qa2")
             }
         }
                 
